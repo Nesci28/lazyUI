@@ -1,0 +1,60 @@
+@import "~bootswatch/dist/sandstone/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/sandstone/bootswatch";
+
+html,
+body {
+  background: transparent;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 68px;
+}
+
+.dark {
+  background-color: #8e8c84;
+  color: $light;
+
+  .badge-primary:hover {
+    background-color: lighten($primary, 25%);
+  }
+  .badge-danger:hover {
+    background-color: lighten($danger, 25%);
+  }
+  .alert {
+    background-color: $dark;
+    border-color: #000;
+  }
+
+  form {
+    background-color: $dark;
+  }
+}
+
+.light {
+  background-color: $light;
+  color: $dark;
+
+  .badge-primary:hover {
+    background-color: darken($primary, 25%);
+  }
+  .badge-danger:hover {
+    background-color: darken($danger, 25%);
+  }
+  .alert {
+    background-color: #d0d0d0;
+    color: $dark;
+    border-color: $dark;
+  }
+
+  form {
+    background-color: #d0d0d0;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

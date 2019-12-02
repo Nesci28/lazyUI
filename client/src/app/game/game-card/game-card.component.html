@@ -1,0 +1,38 @@
+<div class="alert">
+  <div class="row">
+    <h4 class="col-4 text-center">Stats</h4>
+    <h4 class="col-4 text-center">Schedule</h4>
+    <h4 class="col-4 text-center">Streams</h4>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="d-flex flex-column">
+        <p class="text-center">
+          Score: {{ game.teams.home.score }} - {{ game.teams.away.score }}
+        </p>
+        <p class="text-center">
+          SOG: {{ game.linescore.teams.home.shotsOnGoal }} -
+          {{ game.linescore.teams.home.shotsOnGoal }}
+        </p>
+      </div>
+    </div>
+    <div class="col-4">
+      <p class="text-center">
+        {{ getDate(game.gameDate) }}
+      </p>
+    </div>
+    <div class="col-4">
+      <div class="d-flex flex-wrap">
+        <div *ngFor="let broadcast of game.broadcasts" class="mr-1">
+          <span
+            class="badge pointer"
+            [ngClass]="
+              broadcast.language === 'en' ? 'badge-primary' : 'badge-danger'
+            "
+            >{{ broadcast.name }}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

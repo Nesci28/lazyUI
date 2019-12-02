@@ -1,0 +1,64 @@
+<div class="row">
+  <div
+    class="col-1 d-lg-none text-center pointer"
+    (click)="showCollapsed($event)"
+  >
+    <i
+      class="fas fa-caret-square-up fa-2x"
+      [ngClass]="{ 'fa-rotate-180': !game.collapsed }"
+    ></i>
+  </div>
+  <div class="col-lg-3 col-5" *ngFor="let i of ['home', 'away']">
+    <div
+      class="d-flex justify-content-center"
+      [ngClass]="{
+        'logo-translateX': game.teams[i].team.abbreviation === 'ANA'
+      }"
+    >
+      <img
+        src="../../../assets/logos/{{ game.teams[i].team.abbreviation }}.png"
+        alt=""
+      />
+      <div class="d-flex flex-column">
+        <p>&nbsp;{{ game.teams[i].team.name }}</p>
+        <p>
+          &nbsp;{{ game.teams[i].leagueRecord.wins }}-{{
+            game.teams[i].leagueRecord.losses
+          }}-{{ game.teams[i].leagueRecord.ot }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 d-none d-lg-block">
+    <div class="d-flex flex-column">
+      <p class="text-center">
+        Score: {{ game.teams.home.score }} - {{ game.teams.away.score }}
+      </p>
+      <p class="text-center">
+        SOG: {{ game.linescore.teams.home.shotsOnGoal }} -
+        {{ game.linescore.teams.home.shotsOnGoal }}
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-2 d-none d-lg-block">
+    <p class="text-center">
+      {{ getDate(game.gameDate) }}
+    </p>
+  </div>
+  <div class="col-lg-2 d-none d-lg-block">
+    <div class="d-flex flex-wrap">
+      <div *ngFor="let broadcast of game.broadcasts" class="mr-1">
+        <span
+          class="badge pointer"
+          [ngClass]="
+            broadcast.language === 'en' ? 'badge-primary' : 'badge-danger'
+          "
+          >{{ broadcast.name }}</span
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mt-3">
+    <app-game-card [game]="game" *ngIf="game.collapsed"></app-game-card>
+  </div>
+</div>
