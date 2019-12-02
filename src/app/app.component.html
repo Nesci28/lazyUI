@@ -3,7 +3,7 @@
     class="position-fixed w-100"
     (darkMode)="darkModeSwitch($event)"
   ></app-navbar>
-  <div class="h-100" [ngClass]="darkMode ? 'bg-dark' : 'bg-light'">
+  <div class="h-100" [ngClass]="darkMode ? 'dark' : 'light'">
     <div class="container">
       <router-outlet></router-outlet>
     </div>
