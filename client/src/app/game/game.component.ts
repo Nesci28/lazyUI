@@ -21,6 +21,7 @@ export class GameComponent extends BaseComponent implements OnInit {
       .getGames()
       .pipe(takeUntil(this.destroy$))
       .subscribe(games => {
+        console.log("games :", games);
         this.games = games;
       });
   }

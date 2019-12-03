@@ -53,6 +53,7 @@
           [ngClass]="
             broadcast.language === 'en' ? 'badge-primary' : 'badge-danger'
           "
+          (click)="launchStream(game, broadcast.name)"
           >{{ broadcast.name }}</span
         >
       </div>

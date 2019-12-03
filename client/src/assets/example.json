@@ -20,10 +20,10 @@
           "season": "20192020",
           "gameDate": "2019-12-03T00:00:00Z",
           "status": {
-            "abstractGameState": "Preview",
-            "codedGameState": "1",
-            "detailedState": "Scheduled",
-            "statusCode": "1",
+            "abstractGameState": "Live",
+            "codedGameState": "3",
+            "detailedState": "In Progress",
+            "statusCode": "3",
             "startTimeTBD": false
           },
           "teams": {
@@ -34,7 +34,7 @@
                 "ot": 4,
                 "type": "league"
               },
-              "score": 0,
+              "score": 1,
               "team": {
                 "id": 1,
                 "name": "New Jersey Devils",
@@ -83,7 +83,7 @@
                 "ot": 5,
                 "type": "league"
               },
-              "score": 0,
+              "score": 7,
               "team": {
                 "id": 7,
                 "name": "Buffalo Sabres",
@@ -128,8 +128,61 @@
             }
           },
           "linescore": {
-            "currentPeriod": 0,
-            "periods": [],
+            "currentPeriod": 3,
+            "currentPeriodOrdinal": "3rd",
+            "currentPeriodTimeRemaining": "14:23",
+            "periods": [
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T00:12:51Z",
+                "endTime": "2019-12-03T00:51:26Z",
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "goals": 5,
+                  "shotsOnGoal": 15,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 6,
+                  "rinkSide": "right"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T01:09:27Z",
+                "endTime": "2019-12-03T01:44:04Z",
+                "num": 2,
+                "ordinalNum": "2nd",
+                "home": {
+                  "goals": 2,
+                  "shotsOnGoal": 8,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 1,
+                  "shotsOnGoal": 21,
+                  "rinkSide": "left"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T02:02:23Z",
+                "num": 3,
+                "ordinalNum": "3rd",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 6,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 5,
+                  "rinkSide": "right"
+                }
+              }
+            ],
             "shootoutInfo": {
               "away": {
                 "scores": 0,
@@ -147,10 +200,10 @@
                   "name": "Buffalo Sabres",
                   "link": "/api/v1/teams/7"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 7,
+                "shotsOnGoal": 29,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               },
               "away": {
@@ -159,10 +212,10 @@
                   "name": "New Jersey Devils",
                   "link": "/api/v1/teams/1"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 1,
+                "shotsOnGoal": 32,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               }
             },
@@ -172,6 +225,11 @@
               "intermissionTimeRemaining": 0,
               "intermissionTimeElapsed": 0,
               "inIntermission": false
+            },
+            "powerPlayInfo": {
+              "situationTimeRemaining": 863,
+              "situationTimeElapsed": 337,
+              "inSituation": false
             }
           },
           "venue": {
@@ -212,11 +270,11 @@
                   "platform": "web",
                   "items": [
                     {
-                      "guid": "2ae0b8dc-7a1c-436b-80bc-a0e7a917ec35",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "c6fe4bea-9e99-451b-97f1-6750eca9faf7",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70354203",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "MSG-B",
                       "eventId": "221-2003947",
                       "language": "eng",
                       "freeGame": false,
@@ -224,11 +282,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "ab95a799-2f5e-4a93-a5a9-b6e1472637d0",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "4a85836a-3ada-4c2b-b3fa-e0e92c13109f",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70354303",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "MSG+",
                       "eventId": "221-2003947",
                       "language": "eng",
                       "freeGame": false,
@@ -236,8 +294,8 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "680e3660-69db-40d2-891c-f3cc165045be",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "7fc5e671-d2ff-4bf9-9f64-6b8ea5fb3dae",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70357003",
                       "mediaFeedType": "COMPOSITE",
                       "callLetters": "",
@@ -253,10 +311,10 @@
                   "title": "Audio",
                   "items": [
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70354403",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "WGR",
                       "eventId": "221-2003947",
                       "language": "eng",
                       "freeGame": false,
@@ -264,10 +322,10 @@
                       "gamePlus": false
                     },
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70354503",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "NHL.com",
                       "eventId": "221-2003947",
                       "language": "eng",
                       "freeGame": false,
@@ -293,7 +351,8 @@
               ]
             },
             "highlights": {}
-          }
+          },
+          "collapsed": false
         },
         {
           "gamePk": 2019020420,
@@ -302,10 +361,10 @@
           "season": "20192020",
           "gameDate": "2019-12-03T00:00:00Z",
           "status": {
-            "abstractGameState": "Preview",
-            "codedGameState": "1",
-            "detailedState": "Scheduled",
-            "statusCode": "1",
+            "abstractGameState": "Live",
+            "codedGameState": "3",
+            "detailedState": "In Progress",
+            "statusCode": "3",
             "startTimeTBD": false
           },
           "teams": {
@@ -316,7 +375,7 @@
                 "ot": 4,
                 "type": "league"
               },
-              "score": 0,
+              "score": 4,
               "team": {
                 "id": 54,
                 "name": "Vegas Golden Knights",
@@ -366,7 +425,7 @@
                 "ot": 3,
                 "type": "league"
               },
-              "score": 0,
+              "score": 1,
               "team": {
                 "id": 3,
                 "name": "New York Rangers",
@@ -411,8 +470,61 @@
             }
           },
           "linescore": {
-            "currentPeriod": 0,
-            "periods": [],
+            "currentPeriod": 3,
+            "currentPeriodOrdinal": "3rd",
+            "currentPeriodTimeRemaining": "09:33",
+            "periods": [
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T00:07:51Z",
+                "endTime": "2019-12-03T00:43:17Z",
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 12,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 2,
+                  "shotsOnGoal": 17,
+                  "rinkSide": "left"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T01:01:32Z",
+                "endTime": "2019-12-03T01:35:49Z",
+                "num": 2,
+                "ordinalNum": "2nd",
+                "home": {
+                  "goals": 1,
+                  "shotsOnGoal": 7,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 2,
+                  "shotsOnGoal": 11,
+                  "rinkSide": "right"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T01:54:03Z",
+                "num": 3,
+                "ordinalNum": "3rd",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 6,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 1,
+                  "rinkSide": "left"
+                }
+              }
+            ],
             "shootoutInfo": {
               "away": {
                 "scores": 0,
@@ -430,10 +542,10 @@
                   "name": "New York Rangers",
                   "link": "/api/v1/teams/3"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 1,
+                "shotsOnGoal": 25,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               },
               "away": {
@@ -442,10 +554,10 @@
                   "name": "Vegas Golden Knights",
                   "link": "/api/v1/teams/54"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 4,
+                "shotsOnGoal": 29,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               }
             },
@@ -455,6 +567,11 @@
               "intermissionTimeRemaining": 0,
               "intermissionTimeElapsed": 0,
               "inIntermission": false
+            },
+            "powerPlayInfo": {
+              "situationTimeRemaining": 573,
+              "situationTimeElapsed": 208,
+              "inSituation": false
             }
           },
           "venue": {
@@ -502,11 +619,11 @@
                   "platform": "web",
                   "items": [
                     {
-                      "guid": "aeaf025a-6c96-47ca-bfc4-59b76d37e74d",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "d674688c-1f0b-43f5-ae20-369af7131b18",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356303",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "MSG2",
                       "eventId": "221-2003957",
                       "language": "eng",
                       "freeGame": false,
@@ -514,11 +631,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "d6ee9cbd-8ad9-4913-9eca-f0b03cb0454a",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "52c80ec7-04b0-411b-b854-bbae44385312",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356403",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "ATT-RM",
                       "eventId": "221-2003957",
                       "language": "eng",
                       "freeGame": false,
@@ -526,11 +643,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "09509b99-67a4-43e1-ba0c-1c2b6d46664e",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "1b19995d-b57e-4584-ab05-3f1f2a8c7beb",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356703",
                       "mediaFeedType": "FRENCH",
-                      "callLetters": "",
+                      "callLetters": "TVAS",
                       "eventId": "221-2003957",
                       "language": "fra",
                       "freeGame": false,
@@ -538,8 +655,8 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "6877237c-bc22-4c91-82ab-950d7fd606b0",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "4d6fbfd7-ffc9-47cf-b5bd-ce936a29f275",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356903",
                       "mediaFeedType": "COMPOSITE",
                       "callLetters": "",
@@ -555,10 +672,10 @@
                   "title": "Audio",
                   "items": [
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356503",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "WEPN",
                       "eventId": "221-2003957",
                       "language": "eng",
                       "freeGame": false,
@@ -566,10 +683,10 @@
                       "gamePlus": false
                     },
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70356603",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "KRLV",
                       "eventId": "221-2003957",
                       "language": "eng",
                       "freeGame": false,
@@ -580,12 +697,12 @@
                 },
                 {
                   "title": "Extended Highlights",
-                  "topicList": "311473866",
+                  "topicList": "312076832",
                   "items": []
                 },
                 {
                   "title": "Recap",
-                  "topicList": "311473866",
+                  "topicList": "312076832",
                   "items": []
                 },
                 {
@@ -595,7 +712,8 @@
               ]
             },
             "highlights": {}
-          }
+          },
+          "collapsed": false
         },
         {
           "gamePk": 2019020421,
@@ -604,10 +722,10 @@
           "season": "20192020",
           "gameDate": "2019-12-03T00:30:00Z",
           "status": {
-            "abstractGameState": "Preview",
-            "codedGameState": "1",
-            "detailedState": "Scheduled",
-            "statusCode": "1",
+            "abstractGameState": "Live",
+            "codedGameState": "3",
+            "detailedState": "In Progress",
+            "statusCode": "3",
             "startTimeTBD": false
           },
           "teams": {
@@ -618,7 +736,7 @@
                 "ot": 2,
                 "type": "league"
               },
-              "score": 0,
+              "score": 3,
               "team": {
                 "id": 2,
                 "name": "New York Islanders",
@@ -668,7 +786,7 @@
                 "ot": 3,
                 "type": "league"
               },
-              "score": 0,
+              "score": 1,
               "team": {
                 "id": 17,
                 "name": "Detroit Red Wings",
@@ -713,8 +831,45 @@
             }
           },
           "linescore": {
-            "currentPeriod": 0,
-            "periods": [],
+            "currentPeriod": 2,
+            "currentPeriodOrdinal": "2nd",
+            "currentPeriodTimeRemaining": "END",
+            "periods": [
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T00:38:04Z",
+                "endTime": "2019-12-03T01:11:34Z",
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 11,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 2,
+                  "shotsOnGoal": 9,
+                  "rinkSide": "left"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T01:29:42Z",
+                "endTime": "2019-12-03T02:08:56Z",
+                "num": 2,
+                "ordinalNum": "2nd",
+                "home": {
+                  "goals": 1,
+                  "shotsOnGoal": 12,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 1,
+                  "shotsOnGoal": 6,
+                  "rinkSide": "right"
+                }
+              }
+            ],
             "shootoutInfo": {
               "away": {
                 "scores": 0,
@@ -732,10 +887,10 @@
                   "name": "Detroit Red Wings",
                   "link": "/api/v1/teams/17"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 1,
+                "shotsOnGoal": 23,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               },
               "away": {
@@ -744,19 +899,24 @@
                   "name": "New York Islanders",
                   "link": "/api/v1/teams/2"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 3,
+                "shotsOnGoal": 15,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               }
             },
             "powerPlayStrength": "Even",
             "hasShootout": false,
             "intermissionInfo": {
-              "intermissionTimeRemaining": 0,
-              "intermissionTimeElapsed": 0,
-              "inIntermission": false
+              "intermissionTimeRemaining": 1019,
+              "intermissionTimeElapsed": 61,
+              "inIntermission": true
+            },
+            "powerPlayInfo": {
+              "situationTimeRemaining": 0,
+              "situationTimeElapsed": 206,
+              "inSituation": false
             }
           },
           "venue": {
@@ -790,11 +950,11 @@
                   "platform": "web",
                   "items": [
                     {
-                      "guid": "df21b742-ffdb-4dec-b342-622e1fd2daf1",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "ac858aea-8dd0-4d62-9e2b-88f58aa7d391",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70378103",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "FS-D",
                       "eventId": "221-2003690",
                       "language": "eng",
                       "freeGame": true,
@@ -802,11 +962,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "8cfe3b72-c90e-48a4-a95a-57bcf4142332",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "8080a9e3-69f9-4994-8c55-d1d69a2383b0",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70378203",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "MSG+ 2",
                       "eventId": "221-2003690",
                       "language": "eng",
                       "freeGame": true,
@@ -814,8 +974,8 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "dbe5dcbb-795d-49ff-a0ff-418cca86ba06",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "d4eed8ae-c32c-469e-905a-79b62818004f",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70378703",
                       "mediaFeedType": "COMPOSITE",
                       "callLetters": "",
@@ -831,10 +991,10 @@
                   "title": "Audio",
                   "items": [
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70378303",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "WXYT",
                       "eventId": "221-2003690",
                       "language": "eng",
                       "freeGame": false,
@@ -842,10 +1002,10 @@
                       "gamePlus": false
                     },
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70378403",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "WRHU",
                       "eventId": "221-2003690",
                       "language": "eng",
                       "freeGame": false,
@@ -871,7 +1031,8 @@
               ]
             },
             "highlights": {}
-          }
+          },
+          "collapsed": false
         },
         {
           "gamePk": 2019020422,
@@ -880,10 +1041,10 @@
           "season": "20192020",
           "gameDate": "2019-12-03T01:30:00Z",
           "status": {
-            "abstractGameState": "Preview",
-            "codedGameState": "1",
-            "detailedState": "Scheduled",
-            "statusCode": "1",
+            "abstractGameState": "Live",
+            "codedGameState": "3",
+            "detailedState": "In Progress",
+            "statusCode": "3",
             "startTimeTBD": false
           },
           "teams": {
@@ -894,7 +1055,7 @@
                 "ot": 6,
                 "type": "league"
               },
-              "score": 0,
+              "score": 2,
               "team": {
                 "id": 19,
                 "name": "St. Louis Blues",
@@ -989,8 +1150,27 @@
             }
           },
           "linescore": {
-            "currentPeriod": 0,
-            "periods": [],
+            "currentPeriod": 1,
+            "currentPeriodOrdinal": "1st",
+            "currentPeriodTimeRemaining": "01:29",
+            "periods": [
+              {
+                "periodType": "REGULAR",
+                "startTime": "2019-12-03T01:37:49Z",
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 9,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 2,
+                  "shotsOnGoal": 9,
+                  "rinkSide": "left"
+                }
+              }
+            ],
             "shootoutInfo": {
               "away": {
                 "scores": 0,
@@ -1009,9 +1189,9 @@
                   "link": "/api/v1/teams/16"
                 },
                 "goals": 0,
-                "shotsOnGoal": 0,
+                "shotsOnGoal": 9,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               },
               "away": {
@@ -1020,10 +1200,10 @@
                   "name": "St. Louis Blues",
                   "link": "/api/v1/teams/19"
                 },
-                "goals": 0,
-                "shotsOnGoal": 0,
+                "goals": 2,
+                "shotsOnGoal": 9,
                 "goaliePulled": false,
-                "numSkaters": 0,
+                "numSkaters": 5,
                 "powerPlay": false
               }
             },
@@ -1033,6 +1213,11 @@
               "intermissionTimeRemaining": 0,
               "intermissionTimeElapsed": 0,
               "inIntermission": false
+            },
+            "powerPlayInfo": {
+              "situationTimeRemaining": 89,
+              "situationTimeElapsed": 249,
+              "inSituation": false
             }
           },
           "venue": {
@@ -1073,11 +1258,11 @@
                   "platform": "web",
                   "items": [
                     {
-                      "guid": "51a26189-fd07-4f33-a0b6-67fc78dabd38",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "c236190a-ba8e-45f4-aeb3-951df6661d3d",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70361303",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "NBCS-CH",
                       "eventId": "221-2003692",
                       "language": "eng",
                       "freeGame": false,
@@ -1085,11 +1270,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "94ac9eb7-6ced-4291-b2f5-3218ba8845ee",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "5374e1a4-b185-4374-bbb6-d95236093d3e",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70361403",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "FSMW",
                       "eventId": "221-2003692",
                       "language": "eng",
                       "freeGame": false,
@@ -1097,8 +1282,8 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "bc08189c-69af-4b34-94a5-b27f2046b168",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "cd1cc052-bfb1-457f-ac26-7936eea66fc0",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70361903",
                       "mediaFeedType": "COMPOSITE",
                       "callLetters": "",
@@ -1114,10 +1299,10 @@
                   "title": "Audio",
                   "items": [
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70361503",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "WGN",
                       "eventId": "221-2003692",
                       "language": "eng",
                       "freeGame": false,
@@ -1125,10 +1310,10 @@
                       "gamePlus": false
                     },
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70361603",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "101ESPN",
                       "eventId": "221-2003692",
                       "language": "eng",
                       "freeGame": false,
@@ -1154,7 +1339,8 @@
               ]
             },
             "highlights": {}
-          }
+          },
+          "collapsed": false
         },
         {
           "gamePk": 2019020423,
@@ -1363,11 +1549,11 @@
                   "platform": "web",
                   "items": [
                     {
-                      "guid": "8a3391e4-a4b5-4eea-95df-9ac637b91f54",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "4b7a15df-8b3b-4b83-8a60-43f50654bb17",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70363403",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "PRIME",
                       "eventId": "221-2003694",
                       "language": "eng",
                       "freeGame": false,
@@ -1375,11 +1561,11 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "d890fd84-b341-4fb4-8a0e-de96821fb53e",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "d4c708d3-c3d2-490e-858d-d996fa1ce570",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70363503",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "FSW",
                       "eventId": "221-2003694",
                       "language": "eng",
                       "freeGame": false,
@@ -1387,8 +1573,8 @@
                       "gamePlus": false
                     },
                     {
-                      "guid": "f8a2494b-bfcc-4661-91bc-6a3fac72e2d6",
-                      "mediaState": "MEDIA_OFF",
+                      "guid": "ec3edc2c-0e61-4a0f-81c4-2a44aad8bcc6",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70364003",
                       "mediaFeedType": "COMPOSITE",
                       "callLetters": "",
@@ -1404,10 +1590,10 @@
                   "title": "Audio",
                   "items": [
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70363603",
                       "mediaFeedType": "HOME",
-                      "callLetters": "",
+                      "callLetters": "KLAA",
                       "eventId": "221-2003694",
                       "language": "eng",
                       "freeGame": false,
@@ -1415,10 +1601,10 @@
                       "gamePlus": false
                     },
                     {
-                      "mediaState": "MEDIA_OFF",
+                      "mediaState": "MEDIA_ON",
                       "mediaPlaybackId": "70363703",
                       "mediaFeedType": "AWAY",
-                      "callLetters": "",
+                      "callLetters": "NHL.com",
                       "eventId": "221-2003694",
                       "language": "eng",
                       "freeGame": false,
@@ -1444,7 +1630,8 @@
               ]
             },
             "highlights": {}
-          }
+          },
+          "collapsed": false
         }
       ],
       "events": [],

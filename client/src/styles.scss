@@ -14,6 +14,14 @@ body {
   padding-top: 68px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.alert-light2 {
+  background-color: $light2;
+}
+
 .dark {
   background-color: #8e8c84;
   color: $light;
@@ -24,11 +32,9 @@ body {
   .badge-danger:hover {
     background-color: lighten($danger, 25%);
   }
-  .alert {
-    background-color: $dark;
-    border-color: #000;
+  .alert-danger {
+    background-color: $danger;
   }
-
   form {
     background-color: $dark;
   }
@@ -44,17 +50,7 @@ body {
   .badge-danger:hover {
     background-color: darken($danger, 25%);
   }
-  .alert {
-    background-color: #d0d0d0;
-    color: $dark;
-    border-color: $dark;
-  }
-
   form {
     background-color: #d0d0d0;
   }
-}
-
-.pointer {
-  cursor: pointer;
 }
