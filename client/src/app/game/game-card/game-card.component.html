@@ -26,6 +26,7 @@
         <div *ngFor="let broadcast of game.broadcasts" class="mr-1">
           <span
             class="badge pointer"
+            (click)="launchStream(game, broadcast.name)"
             [ngClass]="
               broadcast.language === 'en' ? 'badge-primary' : 'badge-danger'
             "

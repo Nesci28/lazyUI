@@ -1,6 +1,7 @@
 @import "~bootswatch/dist/sandstone/variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootswatch/dist/sandstone/bootswatch";
+@import "~bootswatch/dist/sandstone/bootstrap.min.css";
 
 html,
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 .alert-light2 {
-  background-color: $light2;
+  background-color: #d3d3d3;
 }
 
 .dark {

@@ -1,11 +1,16 @@
 <div class="h-100">
   <app-navbar
     class="position-fixed w-100"
+    style="z-index:2;"
     (darkMode)="darkModeSwitch($event)"
   ></app-navbar>
-  <div class="h-100" [ngClass]="darkMode ? 'dark' : 'light'">
+  <div
+    class="h-100"
+    style="overflow:auto;"
+    [ngClass]="darkMode ? 'dark' : 'light'"
+  >
     <div class="container h-100">
-      <router-outlet></router-outlet>
+      <router-outlet class="bg-dark"></router-outlet>
     </div>
   </div>
 </div>

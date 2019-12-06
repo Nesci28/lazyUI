@@ -16,7 +16,7 @@ export class GameShowcaseComponent extends BaseComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.game.collapsed = false;
+    this.game.collapsed = true;
   }
 
   getDate(date: string): string {

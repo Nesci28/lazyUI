@@ -1,18 +1,13 @@
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Login } from "./models/login.model";
+
 import { environment } from "../environments/environment";
+import { Login } from "./models/login.model";
 
 @Injectable({
   providedIn: "root"
 })
 export class HttpService {
-  httpOptions = {
-    headers: new HttpHeaders({
-      "X-Requested-With": "XMLHttpRequest"
-    })
-  };
-
   constructor(private httpClient: HttpClient) {}
 
   login(object: Login) {
@@ -39,11 +34,11 @@ export class HttpService {
     const id = game.content.media.epg[0].items.find(
       game => game.callLetters === broadcast
     ).mediaPlaybackId;
-    const gameUrl = `http://nhl.freegamez.ga/getM3U8.php?league=NHL&date=${dateString}&id=${id}&cdn=akc`;
-    console.log("gameUrl :", gameUrl);
-    const proxyUrl = "https://lazyguy-nhl-proxy.herokuapp.com/";
-    const url = `${proxyUrl}${gameUrl}`;
+    const obj = {
+      dateString,
+      id
+    };
 
-    return this.httpClient.get(url, this.httpOptions);
+    return this.httpClient.post(`${environment.url}/api/v1/game`, obj);
   }
 }
